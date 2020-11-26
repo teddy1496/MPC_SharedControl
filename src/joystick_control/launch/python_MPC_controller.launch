@@ -1,0 +1,5 @@
+<launch>
+
+  <node pkg="joystick_control" type="MPC_MiR.py" name="MPC_Controller"/>
+
+</launch>

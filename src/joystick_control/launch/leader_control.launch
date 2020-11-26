@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<launch>
+
+  <node pkg="joystick_control" type="move_leader.py" name="leader_controller"/>
+  <!-- <include file="$(find teleop_twist_keyboard)/launch/KB_SC_teleop.launch" /> -->
+
+</launch>
