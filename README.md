@@ -10,12 +10,15 @@ git clone --single-branch --branch Melodic_Joystick_SC https://github.com/teddy1
 ## Install required packages and modules.
 Navigate to the folder **"shared_control_pyhton"** and run the **"install_requirements.sh"** script. This will check if required packages are installed and will install them if not already installed. You can run the script from within the folder with the following command.
 ```
+cd shared_control_python
+
 ./install_requirements.sh
 ```
 ## Build the cloned workspace
 Now that required dependencies are installed move navigate back to the directory **"shared_control_python"** and build the directory as a catkin workspace using the command below.
 ```
 cd shared_control_python
+
 catkin_make
 ```
 ## Running the controller
