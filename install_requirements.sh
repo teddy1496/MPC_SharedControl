@@ -1,6 +1,6 @@
 sudo apt-get update 
 sudo apt-get --yes upgrade
-
+cd ~
 REQUIRED_PKG="ros-melodic-desktop-full"
 PKG_OK=$(dpkg-query -W --showformat='${Status}\n' $REQUIRED_PKG|grep "install ok installed")
 echo Checking for $REQUIRED_PKG: $PKG_OK
@@ -67,7 +67,3 @@ fi
 
 pip install casadi
 pip install numpy
-
-cd ~
-git clone --single-branch --branch Melodic_Joystick_SC https://github.com/teddy1496/MPC_SharedControl.git shared_control_python
-
