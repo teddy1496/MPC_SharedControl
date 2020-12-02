@@ -25,7 +25,7 @@ catkin_make
 Now that all required steps are done the next step is to run the actual controller. 
 * You can either run the MiR gazebo simulation with direct teleoperation or with using the shared control teleoperation method.
 
-**The terminal which launches the Keyboard node must be selected in order for the keyboard teleoperation must work.**
+**The terminal which launches the Keyboard node must be selected(i.e. current selected window) in order for the keyboard teleoperation must work.**
 
 * For direct teleoperation, run the **"launch_DirectTeleop.sh"** script on the root of the workspace.
 ```
