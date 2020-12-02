@@ -33,7 +33,7 @@
   </include>
 
   <include file="$(find joystick_control)/launch/leader_control.launch" />
-  <include file="/home/mpc/shared_control_python_KB/launch/fake_localizer.launch" />
+  <include file="$(find mir_gazebo)/launch/fake_localizer.launch" />
   <node name="rviz" pkg="rviz" type="rviz" args="-d /home/mpc/shared_control_python_KB/worlds/rviz/mir_SC.rviz" />
 
 </launch>
