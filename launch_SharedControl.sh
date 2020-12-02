@@ -1,4 +1,4 @@
-cd ~/shared_control_python/
+cd ~/shared_control_python_KB/
 source devel/setup.bash
 cd launch/
 
@@ -9,5 +9,8 @@ sleep 8
 
 rosservice call /gazebo/unpause_physics
 
-sleep 3
+sleep 2
+gnome-terminal -- rosrun teleop_twist_keyboard teleop_twist_keyboard_SC.py &
+
+sleep 2
 roslaunch joystick_control python_MPC_controller.launch
